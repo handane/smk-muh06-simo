@@ -1,0 +1,32 @@
+.sidebar-nav td {
+  padding: 15px 0 15px 20px;
+}
+.sidebar-nav tr {
+  background-color: #eeeeee;
+}
+.sidebar-nav tr:hover {
+  background-color: #c9c9c9;
+  font-weight: 500;
+}
+.sidebar-nav .active {
+  background-color: #01ad74;
+  color: #fff;
+}
+.sidebar-nav .active a {
+  color: #fff;
+}
+.sidebar-nav a {
+  color: #000;
+}
+.sidebar-nav table {
+  margin-left: 35px;
+}
+.artikel {
+  margin-top: 50px;
+}
+.artikel .card {
+  border: none;
+}
+.padding-left-2 {
+  padding-left: 20px;
+}
