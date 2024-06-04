@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2024 at 08:04 AM
+-- Generation Time: Jun 04, 2024 at 04:16 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.5
 
@@ -57,9 +57,7 @@ CREATE TABLE `calon_siswa` (
 --
 
 INSERT INTO `calon_siswa` (`id_calon_siswa`, `id_user_calon_siswa`, `nama`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `agama`, `alamat_sekarang`, `no_telepon`, `nik`, `kk`, `sekolah_asal`, `alamat_sekolah`, `skhun`, `nama_ayah`, `nama_ibu`, `pekerjaan_ayah`, `pekerjaan_ibu`, `keadaan_ayah`, `keadaan_ibu`, `alamat_orangtua`, `no_telpon_orangtua`) VALUES
-(1, 1, 'dela', 'laki-laki', 'samarinda', '1332-12-23', 'islam', 'kamerun', '042342353453', 342345324, 2147483647, 'SMAN 1 Tanjung Selor', 'indonesia', 99, 'amran', 'rahmawati', 'pns', 'pns', 'Masih Hidup', 'Masih Hidup', 'indonesia', '03214324534'),
-(2, 8, 'jihan', 'laki-laki', 'samarinda', '2024-06-03', 'islam', 'fsdafsa', '42553353', 2431143, 341341412, 'SMAN 1 Tanjung Selor', 'f dfvafsdaf', 66, 'ffassad', 'dsfad', 'dfasasd', 'dsfafsd', 'Masih Hidup', 'Masih Hidup', 'indonesia', '32423423234'),
-(3, 9, 'edgar', 'laki-laki', 'samarinda', '2024-06-03', 'islam', 'fgsdgfsgd', '54524', 54543523, 52452354, 'SMAN 1 Tanjung Selor', 'f dfvafsdaf', 99, 'mucksin', 'jaitul', 'pns', 'pns', 'Masih Hidup', 'Masih Hidup', 'indonesia', '54253452354');
+(5, 11, 'rayhan', 'laki-laki', 'samarinda', '2024-06-04', 'islam', 'kamerun', '342214', 42412412, 341423143, 'SMAN 1 Tanjung Selor', 'f dfvafsdaf', 99, 'mucksin', 'jaitul', 'pns', 'pns', 'Masih Hidup', 'Masih Hidup', 'indonesia', '341342342');
 
 -- --------------------------------------------------------
 
@@ -91,17 +89,15 @@ INSERT INTO `user` (`id_user`, `role`, `username`, `password`, `nama`) VALUES
 CREATE TABLE `user_calon_siswa` (
   `id_user_calon_siswa` int(11) NOT NULL,
   `username` varchar(25) NOT NULL,
-  `password` varchar(25) NOT NULL,
-  `nama` varchar(111) NOT NULL
+  `password` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user_calon_siswa`
 --
 
-INSERT INTO `user_calon_siswa` (`id_user_calon_siswa`, `username`, `password`, `nama`) VALUES
-(1, 'rayhan@gmail.com', 'rayhan', 'rayhan'),
-(9, 'edgar@gmail.com', 'edgar', 'edgar');
+INSERT INTO `user_calon_siswa` (`id_user_calon_siswa`, `username`, `password`) VALUES
+(11, 'rayhan@gmail.com', 'rayhan');
 
 --
 -- Indexes for dumped tables
@@ -133,7 +129,7 @@ ALTER TABLE `user_calon_siswa`
 -- AUTO_INCREMENT for table `calon_siswa`
 --
 ALTER TABLE `calon_siswa`
-  MODIFY `id_calon_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_calon_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -145,7 +141,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_calon_siswa`
 --
 ALTER TABLE `user_calon_siswa`
-  MODIFY `id_user_calon_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_user_calon_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
