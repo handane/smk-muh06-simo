@@ -121,7 +121,7 @@ if (!isset($_SESSION["calon_siswa"])) {
                     <td><?php echo $p['no_telepon'] ?>
                   </tr>
                   <tr>
-                    <th>No. NIK</th>
+                    <th>NISN</th>
                     <td><?php echo $p['nik'] ?>
                   </tr>
                   <tr>
@@ -148,6 +148,10 @@ if (!isset($_SESSION["calon_siswa"])) {
                   <tr>
                     <th>Nilai Rata-rata SKHUN</th>
                     <td><?php echo $p['skhun'] ?>
+                  </tr>
+                  <tr>
+                    <th>Jurusan</th>
+                    <td><?php echo $p['jurusan'] ?>
                   </tr>
                 </table>
               </div>
@@ -192,8 +196,8 @@ if (!isset($_SESSION["calon_siswa"])) {
                   </tr>
                 </table>
               </div>
-              <a href="cetak-formulir.php" class="col-md-11 m-5 btn btn-warning">Unduh Formulir</a>
-            </form>''
+              <a href="cetak.php?id_calon_siswa=<?= $p['id_calon_siswa'] ?>" class="col-md-11 m-5 btn btn-warning">Unduh Formulir</a>
+            </form>
           <?php } ?>
           </div>
         </div>

@@ -17,6 +17,9 @@ if (!isset($_SESSION["calon_siswa"])) {
       .kanan {
         padding-left: 10px;
       }
+      span {
+        color: red;
+      }
       footer tr td {
         padding: 10px 5px;
       }
@@ -72,8 +75,8 @@ if (!isset($_SESSION["calon_siswa"])) {
               <div class="form-ppdb col-md-6">
                 <table class="col-md-12">
                   <tr>
-                    <td>Nama</td>
-                    <td><input type="text" class="form-control" name="nama"></td>
+                    <td><span>*</span>Nama</td>
+                    <td><input type="text" class="form-control" name="nama" required></td>
                   </tr>
                   <tr>
                     <td>Jenis Kelamin</td>
@@ -95,7 +98,17 @@ if (!isset($_SESSION["calon_siswa"])) {
                   </tr>
                   <tr>
                     <td>Agama</td>
-                    <td><input type="text" class="form-control" name="agama"></td>
+                    <td>
+                      <select name="agama" class="form-control" required id="">
+                        <option></option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        <option value="katolik">Katolik</option>
+                        <option value="Konghucu">Konghucu</option>
+                      </select>
+                    </td>
                   </tr>
                 </table>
               </div>
@@ -110,8 +123,8 @@ if (!isset($_SESSION["calon_siswa"])) {
                     <td><input type="number" class="form-control" name="no_telepon"></td>
                   </tr>
                   <tr>
-                    <td>No. NIK</td>
-                    <td><input type="number" class="form-control" name="nik"></td>
+                    <td><span>*</span>NISN</td>
+                    <td><input type="number" class="form-control" name="nik" required></td>
                   </tr>
                   <tr>
                     <td>No. KK</td>
@@ -137,6 +150,10 @@ if (!isset($_SESSION["calon_siswa"])) {
                   <tr>
                     <td>Nilai Rata-rata SKHUN</td>
                     <td><input type="text" class="form-control" name="skhun"></td>
+                  </tr>
+                  <tr>
+                    <td>Jurusan</td>
+                    <td><input type="text" class="form-control" name="jurusan"></td>
                   </tr>
                 </table>
               </div>

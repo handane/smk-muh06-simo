@@ -23,13 +23,9 @@
   </head>
 
   <body>
-    <!-- ***** Preloader Start ***** -->
-    <!-- ***** Preloader End ***** -->
 
     <?php include('./include/sub-header.php') ?>
     
-
-    <!-- ***** Header Area Start ***** -->
     <?php include('./include/header-area.php') ?>
     
     <!-- ***** Header Area End ***** -->
@@ -38,10 +34,10 @@
       <div class="owl-carousel owl-banner">
         <div class="item item-2">
           <div class="header-text">
-            <h1>Fasilitas SMK MUH 06 SIMO</h1>
+            <h1>Prestasi SMK MUH 06 SIMO</h1>
             <br />
             <span>Profil > </span>
-            <span>Fasilitas Sekolah </span>
+            <span>Prestasi Sekolah </span>
           </div>
         </div>
       </div>
@@ -53,26 +49,27 @@
           <?php include('./include/sidebar-profil.php') ?>
         </div>
         <div class="col-md-9">
+          <h6 class="mb-4">Berikut beberapa prestasi yang telah diraih oleh siswa siswi SMK Muh 06 Simo yang sangat membanggakan:</h6>
           <div class="col-md-12 row">
-          <div class="col-md-5 border border-1 card card-body m-2">
-            <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.55.27.jpeg" alt="">
-          </div>
-          <div class="col-md-5 border border-1 card card-body m-2">
-            <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.55.28.jpeg" alt="">
-          </div>
-          <div class="col-md-5 border border-1 card card-body m-2">
-            <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.55.35.jpeg" alt="">
-          </div>
-          <div class="col-md-5 border border-1 card card-body m-2">
-            <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.55.27 (1).jpeg" alt="">
-          </div>
+            <div class="col-md-5 border border-1 card card-body m-2">
+              <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.17.38.jpeg" alt="">
+            </div>
+            <div class="col-md-5 border border-1 card card-body m-2">
+              <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.17.46.jpeg" alt="">
+            </div>
+            <div class="col-md-5 border border-1 card card-body m-2">
+              <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.17.56.jpeg" alt="">
+            </div>
+            <div class="col-md-5 border border-1 card card-body m-2">
+              <img src="./assets/images/WhatsApp Image 2024-06-12 at 19.18.21.jpeg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <footer>
-      <?php include('./include/footer.php') ?>
+    <?php include('./include/footer.php') ?>
     </footer>
 
     <!-- Scripts -->

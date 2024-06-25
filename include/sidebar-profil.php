@@ -32,5 +32,10 @@
                   <a href="fasilitas-sekolah.php">Fasilitas Sekolah</a>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a href="prestasi.php">Prestasi</a>
+                </td>
+              </tr>
             </table>
           </div>

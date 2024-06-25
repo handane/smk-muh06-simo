@@ -164,8 +164,8 @@ if (!isset($_SESSION["admin"])) {
                   </tr>
                 </table>
               </div>
-              <a href="cetak-formulir.php" class="col-md-11 m-5 btn btn-warning">Unduh Formulir</a>
-            </form>''
+              <a href="cetak.php?id_calon_siswa=<?= $p['id_calon_siswa'] ?>" class="col-md-11 m-5 btn btn-warning">Unduh Formulir</a>
+            </form>
           <?php } ?>
           </div>
         </div>
