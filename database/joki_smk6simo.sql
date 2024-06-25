@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 04, 2024 at 04:16 AM
+-- Generation Time: Jun 25, 2024 at 09:03 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.5
 
@@ -42,6 +42,7 @@ CREATE TABLE `calon_siswa` (
   `sekolah_asal` varchar(111) NOT NULL,
   `alamat_sekolah` varchar(111) NOT NULL,
   `skhun` int(11) NOT NULL,
+  `jurusan` varchar(55) NOT NULL,
   `nama_ayah` varchar(111) NOT NULL,
   `nama_ibu` varchar(111) NOT NULL,
   `pekerjaan_ayah` varchar(111) NOT NULL,
@@ -51,13 +52,6 @@ CREATE TABLE `calon_siswa` (
   `alamat_orangtua` varchar(111) NOT NULL,
   `no_telpon_orangtua` varchar(111) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `calon_siswa`
---
-
-INSERT INTO `calon_siswa` (`id_calon_siswa`, `id_user_calon_siswa`, `nama`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `agama`, `alamat_sekarang`, `no_telepon`, `nik`, `kk`, `sekolah_asal`, `alamat_sekolah`, `skhun`, `nama_ayah`, `nama_ibu`, `pekerjaan_ayah`, `pekerjaan_ibu`, `keadaan_ayah`, `keadaan_ibu`, `alamat_orangtua`, `no_telpon_orangtua`) VALUES
-(5, 11, 'rayhan', 'laki-laki', 'samarinda', '2024-06-04', 'islam', 'kamerun', '342214', 42412412, 341423143, 'SMAN 1 Tanjung Selor', 'f dfvafsdaf', 99, 'mucksin', 'jaitul', 'pns', 'pns', 'Masih Hidup', 'Masih Hidup', 'indonesia', '341342342');
 
 -- --------------------------------------------------------
 
